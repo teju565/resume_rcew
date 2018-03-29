@@ -1,24 +1,35 @@
+table,tr,td{
+  border:2px solid #000;
+  border-collapse: collapse;
+  margin : 3px;
+}
 .main{
-  width:100%;
+
   background-color: #999;
   /* flex box syntax */
   display:flex;
+flex-wrap:wrap;
   flex-direction: row;
 }
 .left{
-  width:30%;
-  background-color:#c45e45;
-  border: 5px solid #000;
-  margin:5px;
-  padding:6px;
+  text-align:justify;
+  flex: 1;
+  background-color:#FFD700;
+  border: 2px solid #000;
+  margin:2px;
+  padding:3px;
+  color:#000;
   /* background-image:url(); */
 }
 .right
 {
-  width:70%;
-  background-color: #666;
+  text-align:justify;
+  flex:2;
+  background-color: #FF69B4;
   border: 5px solid #000;
   margin:5px;
+  color:#000;
+  padding:3px;
 }
 #name{
   color:green;
@@ -34,62 +45,62 @@
 480:mobile(or)smaller device */
 /* @media screen and (min-width:425px) */
 @media only screen and (min-width:1024px) and (max-width:1280px){
-  .main{
+   .main{
     dispaly:flex;
     flex-direction: row;
     width:100%;
   }
   .left{
-    width:25%;
+
     background-color: #985;
   }
   .right{
-    width:75%;
+
     background-color: #5436;
   }
 }
 @media screen and (min-width:768px) and (max-width:1024px){
-  .main{
+   .main{
     dispaly:flex;
     flex-direction: row;
     width:100%;
   }
   .left{
-    width:25%;
+
     background-color: skyblue;
   }
   .right{
-    width:75%;
+
     background-color: red;
   }
 }
 @media all and (min-width:480px) and (max-width:768px){
-  .main{
+   .main{
     dispaly:flex;
     flex-direction: row;
-    width:100%;
+
   }
   .left{
-    width:25%;
+
     background-color: orange;
   }
   .right{
-    width:75%;
+
     background-color: purple;
   }
 }
 @media all and (max-width:480px){
-  .main{
+   .main{
     dispaly:flex;
-    flex-direction: column;
+    
     width:100%;
   }
   .left{
-    width:50%;
+
     background-color: red;
   }
   .right{
-    width:50%;
+
     background-color: orange;
   }
 }
